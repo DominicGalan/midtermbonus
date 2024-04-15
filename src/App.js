@@ -1,25 +1,40 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+function Galan({ display }) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='Galan'>
+      {display}
     </div>
   );
 }
 
-export default App;
+function Galan2() {
+  return (
+    <div className="Galan2">
+      <div className="top">
+        <div className='topcolumn'>
+          <div class="item1">1</div>
+          <div class="item2">2</div>
+        </div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+      </div>
+
+      <div className="bottom">
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+      </div>
+    </div>
+  );
+}
+
+export default function App() {
+  return (
+    <div>
+      <Galan display="hello world"/>
+      <Galan2/>
+    </div>
+  );
+}
